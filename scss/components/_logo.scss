@@ -1,0 +1,30 @@
+.logo{
+  display: block;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center; 
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: $logoWidth;
+  height: $logoHeight;
+  
+  &--sm{
+    width: $logoWidth--sm;
+    height: $logoHeight--sm;
+  
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  &--lg{
+    display: none;
+  
+    @include media-breakpoint-up(md) {
+      display: block;
+      width: $logoWidth--lg;
+      height: $logoHeight--lg;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.imgTitle{
+  display: block;
+  width: $imgTitleWidth;
+  height: $imgTitleHeight;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 0;
+  
+  &--sm{
+    width: $imgTitleWidth--sm;
+    height: $imgTitleHeight--sm;
+  }
+  
+  &--md{
+    &--lg{
+      display: none;
+      @include media-breakpoint-up(md){
+        display: block;
+        width: $imgTitleWidth--lg;
+        height: $imgTitleHeight--lg;
+      }
+    }
+    &--none{
+      @include media-breakpoint-up(md){
+        display: none;
+      }
+    }
+  }
+  
+  &--ot{
+    &--md{
+      &--n2{
+        @include media-breakpoint-up(md){
+          position: absolute;
+          background-position-y: top;
+          top: (- $spacer * .5);
+        }
+      }
+    }
+  }
+
+}

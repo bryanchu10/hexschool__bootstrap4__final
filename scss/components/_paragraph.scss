@@ -1,0 +1,13 @@
+.paragraph{
+  &--md{
+    margin-bottom: 2rem;
+    line-height: $paragraphLineHeight;
+    @include media-breakpoint-up(md){
+      margin-bottom: 0; //reset
+      margin-right: 0;  //reset
+      margin-left: 0;   //reset
+      line-height: $paragraphLineHeight--md;
+      height: $paragraphHeight--md;
+    }
+  }
+}

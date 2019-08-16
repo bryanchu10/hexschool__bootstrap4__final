@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no"> <!-- Close automatic delection of the cellphone. -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Sweetaste | Product</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/all.css">
+
+  </head>
+  
+  <body>
+    <div class="container px-0 px-md-1">     
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md align-items-center navbar-light bg-white p-3 px-md-0">
+        <!-- navbar__menuBtn-->
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="material-icons">
+            menu
+          </i>
+        </button>
+        <!-- navbar__logo-->
+        <a class="logo logo--sm" href="#" style="background-image: url(img/logotype-lg-dark.svg)">
+          <h1>Sweetaste</h1>
+        </a>
+        <a class="logo logo--lg" href="#" style="background-image: url(img/logo-all-dark.svg)">
+          Sweetaste
+        </a>
+        <!-- navbar__shoppingCart-->
+        <a class="d-flex order-md-1 ml-md-5" href="cart.html">
+          <i class="material-icons">
+            shopping_cart
+          </i>
+        </a>
+        <!-- navbar__menu-->
+        <div class="collapse navbar-collapse justify-content-end pt-3 pt-md-0" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-primary font-weight-bold px-3" href="index.html">首頁<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary font-weight-bold px-3" href="product.html">甜點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary font-weight-bold px-3" href="login.html">登入</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container px-0 px-md-1 mb-md-6">
+      <!-- banner -->
+      <div class="banner d-flex justify-content-end p-3 p-md-4 bg--px--r" style="background-image: url(https://bit.ly/2Qodh3Z)">
+        <!-- imgTitle -->
+        <h2 class="imgTitle imgTitle--md--none" style="background-image: url(img/sm-想吃甜點是不需要理由的.svg)">
+          想吃甜點──是不需要理由的。
+        </h2>
+        <div class="imgTitle imgTitle--md--lg" style="background-image: url(img/lg-想吃甜點是不需要理由的.svg)">
+          想吃甜點──是不需要理由的。
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 px-0 px-md-1 mb-3">
+          <!-- pane__list -->
+          <div class="sticky-top list-group list-group-lg text-center h5" id="list-tab" role="tablist">
+            <div class="list-group-item bg-primary text-light h4 py-1_6" role="tab" aria-controls="home">
+              甜點類別
+            </div>
+            <a class="list-group-item list-group-item-action text-primary h4 py-1_6 active" data-toggle="list" href="#pane__all" role="tab" aria-controls="home">所有甜點（48）</a>
+            <a class="list-group-item list-group-item-action text-primary h4 py-1_6" data-toggle="list" href="#pane__today" role="tab" aria-controls="profile">本日精選（10）</a>
+            <a class="list-group-item list-group-item-action text-primary h4 py-1_6" data-toggle="list" href="#pane__popular" role="tab" aria-controls="messages">人氣推薦（26）</a>
+            <a class="list-group-item list-group-item-action text-primary h4 py-1_6" data-toggle="list" href="#pane__new" role="tab" aria-controls="settings">新品上市（12）</a>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="tab-content" id="nav-tabContent">
+            <!-- pane__all -->
+            <div class="tab-pane fade show active" id="pane__all" role="tabpanel" aria-labelledby="list-all-list">
+              <div class="row">
+                <!-- card -->
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2QiWeQW)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zBjQuq)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zKOP7w)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2NcDVuB)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zBjQuq)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zKOP7w)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pagination -->
+              <nav class="d-flex justify-content-center justify-content-md-end mt-md-1 mb-3 mb-md-6" aria-label="...">
+                <ul class="pagination pagination-lg mb-0">
+                  <li class="page-item disabled">
+                    <span class="page-link page-link--materialIcon">
+                      <i class="material-icons">
+                        arrow_left
+                      </i>
+                    </span>
+                  </li>
+                  <li class="page-item active" aria-current="page">
+                    <span class="page-link">
+                      1
+                      <span class="sr-only">(current)</span>
+                    </span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link page-link--materialIcon" href="#">
+                      <i class="material-icons">
+                        arrow_right
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              
+            </div>
+            
+            <div class="tab-pane fade" id="pane__today" role="tabpanel" aria-labelledby="list-today-list">
+              <div class="row">
+                <!-- card -->
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2QiWeQW)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zBjQuq)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zKOP7w)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2NcDVuB)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zBjQuq)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      本日精選
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zKOP7w)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pagination -->
+              <nav class="d-flex justify-content-center justify-content-md-end mt-md-1 mb-3 mb-md-6" aria-label="...">
+                <ul class="pagination pagination-lg mb-0">
+                  <li class="page-item disabled">
+                    <span class="page-link page-link--materialIcon">
+                      <i class="material-icons">
+                        arrow_left
+                      </i>
+                    </span>
+                  </li>
+                  <li class="page-item active" aria-current="page">
+                    <span class="page-link">
+                      1
+                      <span class="sr-only">(current)</span>
+                    </span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link page-link--materialIcon" href="#">
+                      <i class="material-icons">
+                        arrow_right
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tab-pane fade" id="pane__popular" role="tabpanel" aria-labelledby="list-popular-list">
+              <div class="row">
+                <!-- card -->
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      人氣推薦
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2QiWeQW)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      人氣推薦
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zBjQuq)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      人氣推薦
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zKOP7w)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      人氣推薦
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2NcDVuB)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      人氣推薦
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zBjQuq)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      人氣推薦
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zKOP7w)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pagination -->
+              <nav class="d-flex justify-content-center justify-content-md-end mt-md-1 mb-3 mb-md-6" aria-label="...">
+                <ul class="pagination pagination-lg mb-0">
+                  <li class="page-item disabled">
+                    <span class="page-link page-link--materialIcon">
+                      <i class="material-icons">
+                        arrow_left
+                      </i>
+                    </span>
+                  </li>
+                  <li class="page-item active" aria-current="page">
+                    <span class="page-link">
+                      1
+                      <span class="sr-only">(current)</span>
+                    </span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link page-link--materialIcon" href="#">
+                      <i class="material-icons">
+                        arrow_right
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tab-pane fade" id="pane__new" role="tabpanel" aria-labelledby="list-new-list">
+              <div class="row">
+                <!-- card -->
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      新品上市
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2QiWeQW)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      新品上市
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zBjQuq)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      新品上市
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zKOP7w)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      新品上市
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2NcDVuB)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      新品上市
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zBjQuq)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 px-3 px-md-1">
+                  <div class="card mb-3 mb-md-2 border-0">
+                    <div class="card__badge verticalWrite text-light bg-primary">
+                      新品上市
+                    </div>
+                    <label class="card__favorite">
+                      <input type="checkbox" class="card__favorite__checkbox">
+                      <i class="material-icons text-primary card__favorite__icon--unselected">
+                        favorite_border
+                      </i>
+                      <i class="material-icons text-primary card__favorite__icon--selected">
+                        favorite
+                      </i>
+                    </label>
+                    <div class="card__photoFrame" style="background-image: url(https://bit.ly/2zKOP7w)">
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="container-fluid">
+                        <dl class="row mb-0 text-center text-primary h5">
+                          <dt class="col-7 mb-0 py-1_6 font-weight-normal border-left border-right">焦糖瑪卡龍</dt>
+                          <dd class="col-5 mb-0 py-1_6 border-right">NT$ 450</dd>
+                        </dl>
+                      </div>
+                      <a href="#" class="btn btn-lg d-block btn-light font-weight-bold text-primary">加入購物車</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pagination -->
+              <nav class="d-flex justify-content-center justify-content-md-end mt-md-1 mb-3 mb-md-6" aria-label="...">
+                <ul class="pagination pagination-lg mb-0">
+                  <li class="page-item disabled">
+                    <span class="page-link page-link--materialIcon">
+                      <i class="material-icons">
+                        arrow_left
+                      </i>
+                    </span>
+                  </li>
+                  <li class="page-item active" aria-current="page">
+                    <span class="page-link">
+                      1
+                      <span class="sr-only">(current)</span>
+                    </span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link page-link--materialIcon" href="#">
+                      <i class="material-icons">
+                        arrow_right
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- subscription-->
+    <div class="bg-primary py-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-5 d-flex align-items-center justify-content-center justify-content-md-start mb-3 mb-md-0">
+            <img src="img/logo-light.svg" width="40" height="40">
+            <p class="ml-2 mb-0 h4 text-light font-weight-light">訂閱你我的甜蜜郵件</p>
+          </div>
+          <div class="col-md-5 px-3 px-md-1">
+            <form class="inputGroup">
+              <label for="email" class="inputGroup__label text-primary">
+                <i class="material-icons">
+                  mail
+                </i>
+              </label>
+              <input class="inputGroup__input border-0" id="email" type="email" name="email" aria-label="email">
+              <button class="inputGroup__btn bg-secondary text-primary border-0" type="submit">
+                <i class="material-icons">
+                  arrow_forward
+                </i>
+              </button>
+            </form>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-light p-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 d-flex flex-column mb-3">
+            <a class="logo mt-1 mb-4 mb-md-auto" style="background-image: url(img/logotype-lg-dark.svg)" href="#">Sweetaste</a>
+            <a href="tel:+886-7-1234-5678" class="text-primary">07-1234-5678</a>
+            <a href="mailto:sweetaste@email.com" class="text-primary">sweetaste@email.com</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=22.631384, 120.301907&query_place_id=ChIJ10T7XIkEbjQRo5UX1nWHLx8" class="text-primary">800 高雄市新興區幸福路 520 號</a>
+          </div>
+          <div class="col-md-5"></div>
+          <div class="d-none d-md-block col-md-1 mb-3">
+            <div class="imgTitle" style="background-image: url(img/sm-今天是個吃甜點的好日子.svg)">
+              今天是個──吃甜點的好日子。
+            </div>
+          </div>
+          <div class="col-md-10 d-flex flex-column flex-md-row align-items-md-end">
+            <div class="d-flex mb-2 mb-md-0">
+              <a class="mr-0_8" href="#"><img src="img/ic-line@.svg" height="32"></a> 
+              <a href="#"><img src="img/ic-facebook.svg" height="32"></a>
+            </div>
+            <span class="ml-md-auto text-primary lineHeight--1" style="font-family: 'Times New Roman', Times, serif">© 2018 Sweetaste* All Rights Reserved</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/all.js"></script>
+  </body>
+</html>

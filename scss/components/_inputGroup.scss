@@ -1,0 +1,64 @@
+.inputGroup{
+  position: relative;
+  display: flex;
+  
+  &__label{
+    position: absolute;
+    top: 1rem;
+    left: 1.25rem;
+  }
+
+  &__icon{
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+  }
+  
+  &__input{
+    flex-grow: 1;
+    text-indent: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $input-bg;
+    &:focus{
+      outline: 0;
+      box-shadow: $input-focus-box-shadow inset;
+      transition: $input-transition;
+      
+    }
+    
+    // Placeholder
+    &::placeholder {
+      color: $input-placeholder-color;
+      font-weight: $font-weight-light;
+      // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+      opacity: 1;
+    }
+  
+    // Disabled and read-only inputs
+    //
+    // HTML5 says that controls under a fieldset > legend:first-child won't be
+    // disabled if the fieldset is disabled. Due to implementation difficulty, we
+    // don't honor that edge case; we style them as disabled anyway.
+    &:disabled,
+    &[readonly] {
+      background-color: $input-disabled-bg;
+      // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+      opacity: 1;
+    }
+  }
+
+  &__btn{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    transition: $btn-transition;
+    
+    &:focus{
+      outline: 0;
+    }
+  }
+
+}

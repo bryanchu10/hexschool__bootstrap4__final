@@ -1,0 +1,23 @@
+.checkout-3{
+  .list-group {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .list-group-item {
+    color: $light;
+    background-color: $primary;
+    margin: 0;
+    text-align: center;
+    
+    &:hover{
+      color: $primary;
+      background-color: $light;
+    }
+
+    &.active {
+      color: $primary;
+      background-color: $light;
+    }
+  }
+}

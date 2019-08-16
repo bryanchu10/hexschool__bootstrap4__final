@@ -1,0 +1,32 @@
+.quantity {
+  &.input-group{
+    width: auto; //Reset setting of width from input-group.
+  }
+  .btn{
+    width: $quantityWidth;
+    color: $primary;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    appearance: textfield;
+  }
+
+  .form-control {
+    flex: 0 1 auto;
+    width: $quantityWidth;
+    background-color: #ffffff;
+    text-align: center;
+    border-top: 1px solid $light;
+    border-bottom: 1px solid $light;
+    &:focus{
+      border-left: 1px solid $light;
+      border-right: 1px solid $light;
+    }
+  }
+}

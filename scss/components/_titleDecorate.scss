@@ -1,0 +1,25 @@
+.titleDecorate{
+  position: relative;
+
+  &::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -$titleDecorateMarginX;
+    content: "";
+    width: $titleDecorateWidth;
+    height: $titleDecorateHeight;
+    background: $titleDecorateColor;
+  }
+
+  &::after{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-right: -$titleDecorateMarginX;
+    content: "";
+    width: $titleDecorateWidth;
+    height: $titleDecorateHeight;
+    background: $titleDecorateColor;
+  }
+}

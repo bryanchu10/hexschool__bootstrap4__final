@@ -1,0 +1,9 @@
+.verticalWrite{
+  writing-mode: vertical-rl;
+  &--md{
+    writing-mode: horizontal-tb;
+    @include media-breakpoint-up(md){
+      writing-mode: vertical-rl;
+    }
+  }
+}

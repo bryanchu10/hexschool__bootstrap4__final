@@ -1,0 +1,17 @@
+.checkout-success {
+  .banner {
+    height: 518px;
+    @include media-breakpoint-up(md) {
+      height: 460px;
+    }
+  }
+
+  .step{
+    width: 190px;
+  }
+
+  .imgTitle{
+    height: 45px;
+    width: 190px;
+  }
+}
